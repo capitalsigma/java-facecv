@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.payback.facecv</groupId>
   <artifactId>facecv</artifactId>
@@ -7,12 +7,132 @@
   <version>1.0-SNAPSHOT</version>
   <name>facecv</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
+
+  <build>
+	<resources>
+	  <resource>
+		<directory>src/main/resources</directory>
+	  </resource>
+	</resources>
+
+  <testResources>
+    <testResource>
+      <directory>src/test/resources</directory>
+    </testResource>
+  </testResources>
+  </build>
+
+	<dependencies>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.bytedeco</groupId>
+      <artifactId>javacpp</artifactId>
+      <version>0.8</version>
+    </dependency>
+
+
+    <!-- <dependency> -->
+    <!--   <groupId>org.bytedeco</groupId> -->
+    <!--   <artifactId>javacvcpp</artifactId> -->
+    <!--   <version>0.8-2-SNAPSHOT</version> -->
+    <!-- </dependency> -->
+	<!-- <dependency> -->
+	<!--   <groupId>org.bytedeco</groupId> -->
+	<!--   <artifactId>javacv</artifactId> -->
+	<!--   <version>0.8-2-SNAPSHOT</version> -->
+	<!-- </dependency> -->
+
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>opencv</artifactId>
+      <version>2.4.9-0.8</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>ffmpeg</artifactId>
+      <version>2.2.1-0.8</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>flycapture</artifactId>
+      <version>1.7.17-0.8</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>libdc1394</artifactId>
+      <version>2.2.2-0.8</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>libfreenect</artifactId>
+      <version>0.4-0.8</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>videoinput</artifactId>
+      <version>0.200-0.8</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>artoolkitplus</artifactId>
+      <version>2.3.0-0.8</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>opencv</artifactId>
+      <version>2.4.9-0.8</version>
+      <classifier>linux-x86_64</classifier>
+    </dependency>
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>ffmpeg</artifactId>
+      <version>2.2.1-0.8</version>
+      <classifier>linux-x86_64</classifier>
+    </dependency>
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>flycapture</artifactId>
+      <version>1.7.17-0.8</version>
+      <classifier>linux-x86_64</classifier>
+    </dependency>
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>libdc1394</artifactId>
+      <version>2.2.2-0.8</version>
+      <classifier>linux-x86_64</classifier>
+    </dependency>
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>libfreenect</artifactId>
+      <version>0.4-0.8</version>
+      <classifier>linux-x86_64</classifier>
+    </dependency>
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>videoinput</artifactId>
+      <version>0.200-0.8</version>
+      <classifier>linux-x86_64</classifier>
+    </dependency>
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>artoolkitplus</artifactId>
+      <version>2.3.0-0.8</version>
+      <classifier>linux-x86_64</classifier>
+    </dependency>
+
+    <dependency>
+      <groupId>org.bytedeco</groupId>
+      <artifactId>javacv</artifactId>
+      <version>0.8</version>
+    </dependency>
+
   </dependencies>
 </project>

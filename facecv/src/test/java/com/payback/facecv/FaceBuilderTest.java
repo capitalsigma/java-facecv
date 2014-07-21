@@ -1,5 +1,7 @@
 package com.payback.facecv;
 
+import com.payback.facecv.preprocess.FaceBuilder;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -7,17 +9,14 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest
+public class FaceBuilderTest
     extends TestCase
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
+    public FaceBuilderTest( String testName )
     {
         super( testName );
+
+		System.out.println("Initialized class");
     }
 
     /**
@@ -31,8 +30,12 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    public void testInit()
     {
         assertTrue( true );
+
+		FaceBuilder faceBuilder = new FaceBuilder();
+		System.out.println("Ran testInit");
+
     }
 }
